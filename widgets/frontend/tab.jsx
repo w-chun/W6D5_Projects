@@ -5,7 +5,7 @@ class Tab extends React.Component {
     super();
     this.state = {
       title: args[0],
-      content :args[1],
+      content: args[1],
       index: 0
     };
   }

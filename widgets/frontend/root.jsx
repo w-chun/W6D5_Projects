@@ -1,6 +1,7 @@
 import React from 'react';
 import Clock from './clock';
 import Tab from './tab';
+import Weather from './weather';
 
 class Root extends React.Component {
 
@@ -14,6 +15,7 @@ class Root extends React.Component {
       <div>
         <div><Clock /></div>
         <div><Tab array = {arr}/></div>
+        <div><Weather /></div>
       </div>
     );
   }

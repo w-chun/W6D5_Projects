@@ -33,19 +33,20 @@ class Clock extends React.Component {
     weekday[4]="Thur";
     weekday[5]="Fri";
     weekday[6]="Sat";
-    weekday[7]="Sun";
+    weekday[0]="Sun";
 
     return `${weekday[this.state.time.getDay()]} ${monthNames[this.state.time.getMonth()]} ${this.state.time.getDate()} ${this.state.time.getFullYear()}`
   }
 
   render() {
     return (
-      <h1 className="clock">
+      <h1>
         Clock
+        <div className="clock">
+        Time: {this.displayTime()}
         <br />
-        {this.displayTime()}
-        <br />
-        {this.displayDate()}
+        Date: {this.displayDate()}
+        </div>
       </h1>
     );
   }
